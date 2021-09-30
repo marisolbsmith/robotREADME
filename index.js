@@ -66,3 +66,34 @@ const questions = [
     name: "license",
   },
 ];
+//write to file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, function (err) {
+    if (err) {
+      return console.log(err);
+    }
+    console.log("Success! Your README.md file has been generated");
+  });
+}
+const writeFileAsync = util.promisify(writeToFile);
+// Returning writeFileAsync promise
+async function init() {
+    try {
+
+        // Prompt Inquirer questions
+        const userInputs = await inquirer.prompt(questions);
+        console.log("Your responses: ", userInputs);
+    
+        // Pass Inquirer userInputs and GitHub userInfo to generateMarkdown
+        console.log("README file generating...")
+        const generateReadMe = generateMarkdown(userInputs);
+
+        await writeFileAsync(`robotREADME.md`, generateReadMe);
+
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+init();
+
