@@ -16,8 +16,6 @@ function renderLicenseLink(license) {
   }
 }
 
-
-
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -45,6 +43,28 @@ function generateMarkdown(data) {
 
 ## Description
 ${data.description}
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#contributing)
+- [Tests](#tests)
+- [Contact](#contact)
+- [License](#license)
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Contact 
+${data.email}
 
 
 
