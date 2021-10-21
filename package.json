@@ -1,0 +1,21 @@
+{
+  "name": "robotreadme",
+  "version": "1.0.0",
+  "description": "robot readme",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marisolbsmith/robotREADME.git"
+  },
+  "author": "marisol davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marisolbsmith/robotREADME/issues"
+  },
+  "homepage": "https://github.com/marisolbsmith/robotREADME#readme"
+}
